@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace CKP4.Models
+namespace CKP5.Models
 {
     [Table("TB_CP4_PACIENTE_PLANO")]
     public class PacientePlanoSaude

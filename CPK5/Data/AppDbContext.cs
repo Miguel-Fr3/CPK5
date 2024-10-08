@@ -1,10 +1,10 @@
-﻿using CKP4.Models;
+﻿using CKP5.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages;
 using Oracle.EntityFrameworkCore.Metadata;
 using System.Reflection.Emit;
 
-namespace CKP4.Data
+namespace CKP5.Data
 {
     public class AppDbContext : DbContext
     {

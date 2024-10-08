@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Data;
 
-namespace CKP4.Models
+namespace CKP5.Models
 {
     [Table("TB_CP4_PACIENTE")]
     public class Paciente

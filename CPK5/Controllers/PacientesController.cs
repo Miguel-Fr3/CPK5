@@ -5,8 +5,8 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
-using CKP4.Data;
-using CKP4.Models;
+using CKP5.Data;
+using CKP5.Models;
 
 namespace CPK5.Controllers
 {

@@ -1,4 +1,4 @@
-using CKP4.Data;
+using CKP5.Data;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
