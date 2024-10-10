@@ -1,0 +1,25 @@
+﻿@model PacientePlanoSaude
+
+@{
+    ViewBag.Title = "Remover Associação";
+}
+
+<h2>Remover Associação entre Paciente e Plano de Saúde</h2>
+
+<form asp-action="RemoverPacientePlanoSaude" method="post">
+    <div class="form-group">
+        <label for="PacienteId">Paciente</label>
+        <select asp-for="PacienteId" class="form-control" asp-items="@(new SelectList(ViewBag.Pacientes, "Id", "Nome"))">
+            <option value="">Selecione um Paciente</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <label for="PlanoSaudeId">Plano de Saúde</label>
+        <select asp-for="PlanoSaudeId" class="form-control" asp-items="@(new SelectList(ViewBag.PlanosSaude, "Id", "NmPlano"))">
+            <option value="">Selecione um Plano de Saúde</option>
+        </select>
+    </div>
+
+    <button type="submit" class="btn btn-danger">Remover Associação</button>
+</form>

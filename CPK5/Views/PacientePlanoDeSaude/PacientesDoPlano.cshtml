@@ -1,0 +1,35 @@
+﻿@model IEnumerable<Paciente>
+
+@{
+    ViewBag.Title = "Pacientes Associados ao Plano de Saúde";
+}
+
+<h2>Pacientes Associados ao Plano de Saúde</h2>
+
+@if (Model != null && Model.Any())
+{
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Nome do Paciente</th>
+                <td>Cpf</td>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var paciente in Model)
+            {
+                <tr>
+                    <td>@paciente.Id</td>
+                    <td>@paciente.Nome</td>
+                    
+                    <td>@paciente.CPF</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Este plano de saúde não possui pacientes associados.</p>
+}

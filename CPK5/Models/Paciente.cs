@@ -1,10 +1,9 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using System.Data;
+﻿using System.ComponentModel.DataAnnotations.Schema;
+using System.ComponentModel.DataAnnotations;
 
-namespace CKP5.Models
+namespace CPK5.Models
 {
-    [Table("TB_CP4_PACIENTE")]
+    [Table("TB_CP5_PACIENTE")]
     public class Paciente
     {
         [Key]

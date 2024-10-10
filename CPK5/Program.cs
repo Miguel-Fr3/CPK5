@@ -1,5 +1,6 @@
-using CKP5.Data;
+using CPK5.Data;
 using Microsoft.EntityFrameworkCore;
+using System;
 
 var builder = WebApplication.CreateBuilder(args);
 

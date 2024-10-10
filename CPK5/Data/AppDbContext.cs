@@ -1,14 +1,10 @@
-﻿using CKP5.Models;
-using Microsoft.EntityFrameworkCore;
-using Microsoft.VisualStudio.Web.CodeGenerators.Mvc.Templates.BlazorIdentity.Pages;
-using Oracle.EntityFrameworkCore.Metadata;
-using System.Reflection.Emit;
-
-namespace CKP5.Data
+﻿using Microsoft.EntityFrameworkCore;
+using CPK5.Models;
+namespace CPK5.Data
 {
     public class AppDbContext : DbContext
     {
-        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options){}
+        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) { }
         public DbSet<Paciente> Pacientes { get; set; }
         public DbSet<PlanoSaude> PlanosSaude { get; set; }
         public DbSet<PacientePlanoSaude> PacientePlanosSaude { get; set; }

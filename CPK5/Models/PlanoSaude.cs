@@ -1,8 +1,8 @@
 ﻿using System.ComponentModel.DataAnnotations.Schema;
 
-namespace CKP5.Models
+namespace CPK5.Models
 {
-    [Table("TB_CP4_PLANO_SAUDE")]
+    [Table("TB_CP5_PLANO_SAUDE")]
     public class PlanoSaude
     {
         public int Id { get; set; }
