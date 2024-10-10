@@ -30,6 +30,19 @@ Este projeto é uma aplicação ASP.NET MVC com Entity Framework, desenvolvida p
    ```bash
    git clone https://github.com/Miguel-Fr3/CPK5
    
-### Execute as migrações para criar as tabelas no banco de dados
-  ```bash
-  dotnet ef database update
+2. Execute as migrações para criar as tabelas no banco de dados:
+   ```bash
+   dotnet ef database update
+
+   
+3. Execute a aplicação:
+   ```bash
+   dotnet run
+
+## Integrantes do Grupo
+- rm99977 - Alberto Seiji
+- rm551997 - Matheus Rodrigues
+- rm99997 - Miguel Fernandes
+- rm552579 - Nicolly de Almeida Gonçalves
+- rm551521 - Patrick Jaguski
+
