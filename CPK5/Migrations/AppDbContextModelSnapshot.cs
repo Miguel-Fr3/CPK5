@@ -58,7 +58,7 @@ namespace CPK5.Migrations
                         {
                             Id = 1,
                             CPF = "123456789",
-                            DtNascimento = new DateTime(2024, 10, 10, 13, 44, 49, 912, DateTimeKind.Local).AddTicks(6417),
+                            DtNascimento = new DateTime(2024, 10, 10, 18, 35, 35, 145, DateTimeKind.Local).AddTicks(7014),
                             Endereco = "endereço inicial",
                             Nome = "Paciente Inicial",
                             Telefone = "123456789"
@@ -95,9 +95,6 @@ namespace CPK5.Migrations
 
                     OraclePropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("CdPlano")
-                        .HasColumnType("NUMBER(10)");
-
                     b.Property<string>("Cobertura")
                         .IsRequired()
                         .HasColumnType("NVARCHAR2(2000)");
@@ -114,7 +111,6 @@ namespace CPK5.Migrations
                         new
                         {
                             Id = 1,
-                            CdPlano = 1,
                             Cobertura = "Cobertura Inicial",
                             NmPlano = "Plano Inicial"
                         });

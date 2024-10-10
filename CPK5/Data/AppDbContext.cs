@@ -19,7 +19,7 @@ namespace CPK5.Data
             modelBuilder.Entity<PlanoSaude>()
                 .HasData(new List<PlanoSaude>
                 {
-                    new PlanoSaude(1, "Plano Inicial", 1, "Cobertura Inicial")
+                    new PlanoSaude(1, "Plano Inicial", "Cobertura Inicial")
                 });
 
             modelBuilder.Entity<Paciente>()

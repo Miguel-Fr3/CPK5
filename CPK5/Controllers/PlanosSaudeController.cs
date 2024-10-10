@@ -54,7 +54,7 @@ namespace CPK5.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,NmPlano,CdPlano,Cobertura")] PlanoSaude planoSaude)
+        public async Task<IActionResult> Create([Bind("Id,NmPlano,Cobertura")] PlanoSaude planoSaude)
         {
             if (ModelState.IsValid)
             {
@@ -86,7 +86,7 @@ namespace CPK5.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,NmPlano,CdPlano,Cobertura")] PlanoSaude planoSaude)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,NmPlano,Cobertura")] PlanoSaude planoSaude)
         {
             if (id != planoSaude.Id)
             {
